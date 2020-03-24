@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Object</title>
+    </head>
+    <body>
+        <script>
+            // var Car = {
+            //     // 注意用：和，
+            //     car_brand: "Tesla",
+            //     car_model: "Model 3",
+            //     price: 35000,
+            //
+            //     teslaAutoPilot: function () {
+            //         return ("<h2> This car has Autopilot</h2>");
+            //     }
+            // }
+
+
+            //Object constructor, works as a template
+            function Cars(car_brand, car_model, price) {
+                this.car_brand = car_brand;
+                this.car_model = car_model;
+                this.price = price;
+                this.teslaAutoPilot = function () {
+                    document.write("<h2> This car has Autopilot</h2>");
+                }
+            }
+
+
+            //document.write("<h2>" + Car.teslaAutoPilot() + "</h2>")
+            var c1 = new Cars("Tesla", "Model 3", 35000);
+            c1.teslaAutoPilot();
+            var c2 = new Cars("BMW", "X5", 60000);
+            document.write(c2.car_model);
+
+
+            document.write("<br>");
+
+            // String, Boolean, Numbers can be object if defined with the "new" keyword
+            var str1 = new String();
+            var str2 = "123";
+            document.write(typeof (str1)); //object
+            document.write("<br>");
+            document.write(typeof (str2)); //string
+            typeof (str1);
+
+            // Modify Object
+            Cars.fuelType = "Electric";
+            delete Cars.price;
+
+            document.write(Cars.fuelType);
+            document.write(Cars.price); //deleted
+
+
+        </script>
+    </body>
+</html>
