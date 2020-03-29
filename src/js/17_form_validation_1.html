@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form</title>
+        <script>
+            function fn1() {
+                var username = document.getElementById("uname");
+                var password = document.getElementById("pass");
+                if (username.value == "" || password.value == "") {
+                    alert("No blank value allowed");
+                    return false;
+                } else {
+                    true;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <!--should put it in form-->
+        <!--false -> not submitted, true -> submitted-->
+        <form action="welcome.html" onsubmit="return fn1()">
+            <input id="uname" placeholder="username">
+            <br>
+            <input id="pass" type="password" id="text2" placeholder="password">
+            <br>
+            <button type="submit" id="btn1">Click me</button>
+        </form>
+    </body>
+</html>

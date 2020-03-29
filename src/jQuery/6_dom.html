@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM</title>
+    </head>
+    <body>
+        <p id = "p1" value = "1024789">value</p>
+    </body>
+
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            alert($("#p1").attr("value"));
+            console.log("123");
+            $("#p1").attr("value", "p2ckass");
+        })
+    </script>
+</html>

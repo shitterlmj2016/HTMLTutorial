@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form</title>
+        <script>
+            function validate() {
+                var username = document.getElementById("uname");
+                var password = document.getElementById("pass");
+                if (username.value.trim() == "") {
+                    alert("No blank username allowed");
+                    uname.style.border = "solid 3px red";
+                    return false;
+                } else if (password.value.trim() == "") {
+                    alert("No blank pwd allowed");
+                    pass.style.border = "solid 3px red";
+                    return false;
+                } else if (password.value.trim().length < 5) {
+                    alert("Password to short");
+                    document.getElementById("lbluser")
+                        .style.visibility = "visible";
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <!--should put it in form-->
+        <!--false -> not submitted, true -> submitted-->
+        <form action="welcome.html" onsubmit="return validate();">
+            <input id="uname" placeholder="username">
+            <br>
+            <input id="pass" type="password" placeholder="password">
+            <label id="lbluser" style="color:red; visibility: hidden">Invalid</label>
+            <br>
+            <button type="submit" id="btn1">Click me</button>
+        </form>
+    </body>
+</html>

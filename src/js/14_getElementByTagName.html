@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Get by Tag</title>
+        <script>
+            function changeStyling() {
+                var para = document.getElementsByTagName("p"); // get all paragraphs, an array
+                para[0].style.fontSize = "25px";
+                para[1].style.color = "red";
+                para[2].style.color = "green";
+                para[3].style.fontStyle = "italic"
+                para[4].style.backgroundColor="yellow";
+
+                for (i=0;i<para.length;i++) {
+                    para[i].style.fontSize = 22;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <p> paragraph 1 </p>
+        <p> paragraph 2 </p>
+        <p> paragraph 3 </p>
+        <p> paragraph 4 </p>
+        <p> paragraph 5 </p>
+        <p> paragraph 6 </p>
+        <br>
+        <button onclick="changeStyling()">Click me</button>
+    </body>
+</html>

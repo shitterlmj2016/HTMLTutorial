@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chrome Debugging</title>
+        <script>
+            function addValues() {
+                var a = document.getElementById("t1").value;
+                var b = document.getElementById("t2").value;
+                document.getElementById("op").innerHTML = "Result = " + (a + b);
+                console.log(a+b); //output log on console
+            }
+        </script>
+    </head>
+    <body>
+        <input id="t1" type="text" placeholder="Text 1"/>
+        <br>
+        <input id="t2" type="text" placeholder="Text 2"/>
+        <br>
+        <button onclick="addValues()" id=addBtn>Add</button>
+        <h2 id="op">Result = </h2>
+    </body>
+</html>

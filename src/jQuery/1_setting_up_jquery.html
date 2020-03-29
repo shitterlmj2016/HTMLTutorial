@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Setting up</title>
+    </head>
+    <body>
+        <h2 id="heading">Setting up jQuery</h2>
+        <button onclick="fn1()" id="btn1">Click</button>
+    </body>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <script>
+        function fn1() {
+            $("#heading").fadeToggle(2000); //visible -fadeout invisible - fadein
+        }
+    </script>
+</html>

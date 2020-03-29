@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Selector</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <p>This is a paragraph outside division</p>
+        <div id="firstdiv" class="mydivs">
+            <p>This is first paragraph in 1 div</p>
+            <p>This is second paragraph in 1 div</p>
+        </div>
+        <div id="seconddiv" class="mydivs">
+            <p>Hahhahahahahha</p>
+        </div>
+        <div id="thirddiv" class="mydivs">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+
+        </div>
+        <div>
+            final div
+        </div>
+        <button onclick="fn1()" id="btn1">Click me</button>
+    </body>
+    <script src="jquery-3.4.1.js">
+    </script>
+    <script>
+        function fn1() {
+            //$("#firstdiv,p,li,.mydivs").fadeToggle(500);
+            //$("div > p").fadeToggle();//only paragraph inside division
+            $("p:first").fadeToggle();//only the first paragraph
+            $("p:even").fadeToggle();//only the even paragraph
+        }
+    </script>
+</html>

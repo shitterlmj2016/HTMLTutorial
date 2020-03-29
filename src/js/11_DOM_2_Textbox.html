@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM2</title>
+        <script>
+            function fn1() {
+                var username = document.getElementById("text1").value;//innerHTML = object property
+                var password = document.getElementById("text2").value;
+                if(username == "123" && password == "456") {
+                    alert("Match");
+                } else {
+                    alert("Not macth");
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <input id="text1" placeholder="username">
+        <br>
+        <input type="password" id="text2" placeholder="password">
+        <br>
+        <button onclick="fn1()" id="btn1">Click me</button>
+    </body>
+</html>

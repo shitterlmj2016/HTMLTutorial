@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Selector</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2>Selectors up jQuery</h2>
+        <h2 class="myheading"> Selectors up jQuery</h2>
+        <h2 id="3rd_h2" class="myheading">Selectors up jQuery</h2>
+        <div class="myheading">
+            Hahhahahahahha
+        </div>
+        <button onclick="fn1()" id="btn1">Click me</button>
+    </body>
+    <script src="jquery-3.4.1.js">
+    </script>
+    <script>
+        function fn1() {
+            //$("h2") = document.getElementById()
+            //$("h2").action();
+            // 3 Selectors: class, id, elements
+            $(".myheading").fadeToggle(); // class -> .
+            //$("#3rd_h2") // id -> #
+            //$("h2") //element (one tag) -> nothing
+        }
+    </script>
+</html>

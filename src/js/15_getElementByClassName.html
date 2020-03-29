@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Class</title>
+        <script>
+            // ID can be used one time, class can be used multiple times
+            function changeStyling() {
+                var element = document.getElementsByClassName("mypara");
+                for (i = 0; i < element.length; i++) {
+                    element[i].style.color = "red";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <body>
+            <p id="p1" class="mypara"> paragraph 1 </p>
+            <p> paragraph 2 </p>
+            <p class="mypara"> paragraph 3 </p>
+            <p> paragraph 4 </p>
+            <p class="mypara"> paragraph 5 </p>
+            <p> paragraph 6 </p>
+            <!--Works for different html types-->
+            <a class="mypara" herf="#">  This is Anchor tag</a>
+            <button onclick="changeStyling()">Click me</button>
+        </body>
+
+    </body>
+</html>

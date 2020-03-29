@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Radio</title>
+        <script>
+            function fn1() {
+                var rd1 = document.getElementById("rd1");
+                var rd2 = document.getElementById("rd2");
+                if (rd1.checked == true) {
+                    alert(rd1.value + " selected");
+                } else if (rd2.checked == true) {
+                    alert(rd2.value + " selected");
+                } else {
+                    alert("Nothing selected");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <!--name: same group of buttons-->
+        <input id="rd1" name="group1" type="radio" value="Apple">Apple</input>
+        <input id="rd2" name="group1" type="radio" value="Banana">Banana</input>
+        <button onclick="fn1()">click me</button>
+    </body>
+</html>

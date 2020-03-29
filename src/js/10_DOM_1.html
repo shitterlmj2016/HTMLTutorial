@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM</title>
+        <script>
+            function buttonClick() {
+                //alert("Button Clicked");
+                var str = document.getElementById("heading2").innerHTML;//innerHTML = object property
+                alert(str);
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="buttonClick()">click me</button>
+        <h2 id="heading2">Some Random Text</h2>
+    </body>
+</html>
